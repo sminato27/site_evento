@@ -1,0 +1,94 @@
+.navbar {
+    background-color: #0b1220; /* dark navy for tech vibe */
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #ffffff;
+    color: #00d4ff; /* accent on active */
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #e6f1ff; /* light text on dark */
+}
+
+.navbar-toggler {
+    color: #e6f1ff;
+}
+
+.section-title {
+    letter-spacing: 0.3px;
+}
+
+/* Section backgrounds for both pages */
+#sobre-o-restaurante, #cardapio, #sobre, #trilhas {
+    background-color: #0f172a; /* slate-900 */
+}
+
+.text-colored {
+     color: #00d4ff; /* cyan accent */
+ }
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button,
+#inscricao button {
+    background-color: #7c3aed; /* purple accent */
+    color: #fff;
+    border: none;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #7c3aed;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+/* subtle card image rounding stays via HTML classes */
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
+/* Imagens: coerência de tamanhos em toda a página */
+/* Carousel em telas médias/grandes */
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 520px;
+        object-fit: cover;
+    }
+}
+
+/* Grade de "Atividades" — fotos padronizadas em 16:9 */
+#atividades img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+}
+
+/* Trilhas (logos e ícones) — manter proporção sem cortar */
+#trilhas .tab-content img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+}
+@media (min-width: 768px) {
+    #trilhas .tab-content img { height: 160px; }
+}
+
+/* Compatibility helpers for legacy classes used in HTML */
+.w-10 { width: 100% !important; height: auto; }
+.md-3 { margin-bottom: 1rem; }
